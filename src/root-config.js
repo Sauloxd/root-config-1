@@ -1,22 +1,29 @@
-import { registerApplication, start } from "single-spa";
-import * as isActive from "./activity-functions";
+import reactDates from "react-dates";
+import moment from "moment";
 
-registerApplication(
-  "@react-mf/navbar",
-  () => System.import("@react-mf/navbar"),
-  isActive.navbar
-);
+console.log("><>", moment);
+console.log("reactDates", reactDates);
 
-registerApplication(
-  "@react-mf/people",
-  () => System.import("@react-mf/people"),
-  isActive.people
-);
+// import { registerApplication, start } from "single-spa";
 
-registerApplication(
-  "@react-mf/planets",
-  () => System.import("@react-mf/planets"),
-  isActive.planets
-);
+// import * as isActive from "./activity-functions";
 
-start();
+// registerApplication(
+//   "@react-mf/navbar",
+//   () => System.import("@react-mf/navbar"),
+//   isActive.navbar
+// );
+
+// // registerApplication(
+// //   "@react-mf/people",
+// //   () => System.import("@react-mf/people"),
+// //   isActive.people
+// // );
+
+// registerApplication(
+//   "@react-mf/planets",
+//   () => System.import("@react-mf/planets"),
+//   isActive.planets
+// );
+// console.log("Caraio cuzão");
+// start();

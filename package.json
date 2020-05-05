@@ -3,7 +3,7 @@
     "start": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
     "lint": "eslint src",
     "test": "jest",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=development"
   },
   "husky": {
     "hooks": {
@@ -32,6 +32,8 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "moment": "^2.24.0",
+    "react-dates": "^21.8.0",
     "single-spa": "^4.4.2"
   }
 }
