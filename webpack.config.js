@@ -37,5 +37,12 @@ module.exports = env => ({
     }),
     new CleanWebpackPlugin()
   ],
-  externals: ["single-spa", /^@react-mf\/.+$/, "moment", "react", "react-dom"]
+  externals: [
+    "single-spa",
+    /^@react-mf\/.+$/,
+    "moment",
+    "react",
+    "react-dom",
+    "styled-components"
+  ]
 });

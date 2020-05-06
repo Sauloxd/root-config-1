@@ -1,29 +1,13 @@
-import reactDates from "react-dates";
+/* eslint-disable  no-console */
+import React, { Fragment } from "react";
+import { SingleDatePicker } from "react-dates";
 import moment from "moment";
+import styled, { createGlobalStyle } from "styled-components";
 
-console.log("><>", moment);
-console.log("reactDates", reactDates);
+console.log("moment", moment()); // this works
+console.log("React", React); // this works
+console.log("SingleDatePicker", SingleDatePicker); // this works
+console.log("Fragment", Fragment); // this also works
 
-// import { registerApplication, start } from "single-spa";
-
-// import * as isActive from "./activity-functions";
-
-// registerApplication(
-//   "@react-mf/navbar",
-//   () => System.import("@react-mf/navbar"),
-//   isActive.navbar
-// );
-
-// // registerApplication(
-// //   "@react-mf/people",
-// //   () => System.import("@react-mf/people"),
-// //   isActive.people
-// // );
-
-// registerApplication(
-//   "@react-mf/planets",
-//   () => System.import("@react-mf/planets"),
-//   isActive.planets
-// );
-// console.log("Caraio cuzão");
-// start();
+console.log("createGlobalStyle UNDEFINED?", createGlobalStyle); // this logs undefined, not working
+console.log("createGlobalStyle WOKRING NORMALLY", styled.createGlobalStyle``); // this also works
